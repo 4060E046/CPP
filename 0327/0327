@@ -74,3 +74,18 @@ int main()
     }
 }
 *******************************************************
+public class Test {
+   public static void main(String args[]) {
+
+    int i,j,k;
+    printf("\n");
+    for(i=1;i<5;i++) {          // i初始值為1;判斷i<5:遞增
+        for(j=1;j<5;j++) {      //j初始值為1;判斷j<5:遞增
+            for (k=1;k<5;k++) { // 確保i、j、k三位互不相同
+                if (i!=k&&i!=j&&j!=k) { 
+                    printf("%d,%d,%d\n",i,j,k);  //列印出i,j,k的值
+                }
+            }
+        }
+    }
+}
