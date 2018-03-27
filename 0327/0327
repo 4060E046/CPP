@@ -1,0 +1,36 @@
+[1]
+*******************************************************
+#include <iostream>
+using namespace std;
+int main()
+{
+    cout << "Hello, world!" << endl;
+    return 0;
+}
+
+//cout是c++语言的输出符號
+//endl是程序的结束符
+//namespace 命名空間
+*******************************************************
+public class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Hello World");
+    }
+}
+
+//public class +檔案名稱，類別的名稱是HelloWorld，這與您所編輯的檔案（HelloWorld.java）主檔名必須相同
+//String[] args是命令列引數
+//class是Java 用來定義類別的關鍵字
+*******************************************************
+#include <stdio.h>
+ 
+int main()
+{
+    /* 我的第一个 C 程序 */
+    printf("Hello, World! \n");
+ 
+    return 0;
+}
+*******************************************************
+
+[2]
