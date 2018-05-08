@@ -1,0 +1,23 @@
+#include <iostream>
+#include <fstream>
+using namespace std;
+
+int main()
+{
+  ofstream output;
+
+  // Create a file
+  output.open("scores200.txt");
+
+  // Write two lines
+  output << "John" << " " << "T333" << " " << "Smith" 
+    << " " << 90 << endl;
+  output << "Eric" << " " << "K555" << " " << "Jones" 
+    << " " << 85 << endl;
+
+  output.close();
+
+  cout << "Done" << endl;
+
+  return 0;
+}
