@@ -1,0 +1,111 @@
+  #include<stdio.h>
+  #include<stdlib.h>
+  void oneonezero();
+  void twotwozero();
+  #define f 110
+  #define g 220
+
+  int main(void)
+
+  {
+    
+    char c,a,b;
+      
+      printf("(a)110V\n");
+      printf("(b)220V\n");
+      printf("請選擇(a)或(b):%c",c);
+      scanf("%c",&c);
+    switch(c)
+    {
+      case 'a':
+      oneonezero();
+      break;
+
+      case 'b':
+      twotwozero();
+      break;   
+
+    }
+      system("pause");
+      return 0;
+  }
+
+      void oneonezero()
+      {
+        int d,e;
+        printf("輸入安培(A)數:");
+        scanf("%d",&d);
+        printf("%d安培\n",d);
+        printf("\n");
+        printf("輸入時數(h):");
+        scanf("%d",&e);
+        printf("%d小時\n",e);
+        printf("\n");
+        printf("30天使用度數為:(%d*%d*%d*30)/1000=%d度\n",f,d,e,(f*d*e*30)/1000);
+  
+        if((f*d*e*30)/1000>0 && (f*d*e*30)/1000<=100)
+        {
+          printf("電費為%d*1=%d\n",(f*d*e*30)/1000,((f*d*e*30)/1000)*1);
+        }
+        else if((f*d*e*30)/1000>100 && (f*d*e*30)/1000<=200)
+        {
+          printf("電費為%d*2=%d\n",(f*d*e*30)/1000,((f*d*e*30)/1000)*2);
+        }
+        else if((f*d*e*30)/1000>200 && (f*d*e*30)/1000<=260)
+        {
+          printf("電費為%d*3=%d\n",(f*d*e*30)/1000,((f*d*e*30)/1000)*3);
+        }
+        else if((f*d*e*30)/1000>260)
+        {
+          printf("電費為%d*4=%d\n",(f*d*e*30)/1000,((f*d*e*30)/1000)*4);
+        }
+        else
+        {
+          printf("不要亂輸入\n");
+
+        }
+
+      }
+
+      void twotwozero()
+      {
+        int h,i;
+        printf("輸入安培(A)數:");
+        scanf("%d",&h);
+        printf("%d安培\n",h);
+        printf("\n");
+        printf("輸入時數(H):");
+        scanf("%d",&i);
+        printf("%d小時\n",i);
+        printf("\n");
+        printf("30天使用度數為:(%d*%d*%d*30)/1000=%d度\n",g,h,i,(g*h*i*30)/1000);
+
+        if((g*h*i*30)/1000>0 && (g*h*i*30)/1000<=100)
+        {
+          printf("電費為%d*1=%d\n",(g*h*i*30)/1000,((g*h*i*30)/1000)*1);
+        }
+        else if((g*h*i*30)/1000>100 && (g*h*i*30)/1000<=200)
+        {
+          printf("電費為%d*2=%d\n",(g*h*i*30)/1000,((g*h*i*30)/1000)*2);
+        }
+        else if((g*h*i*30)/1000>200 && (g*h*i*30)/1000<=260)
+        {
+          printf("電費為%d*3=%d\n",(g*h*i*30)/1000,((g*h*i*30)/1000)*3);
+        }
+        else if((g*h*i*30)/1000>260)
+        {
+          printf("電費為%d*4=%d\n",(g*h*i*30)/1000,((g*h*i*30)/1000)*4);
+        }
+        else
+        {
+          printf("不要亂輸入\n");
+        }
+
+
+
+      }
+
+
+
+
+
